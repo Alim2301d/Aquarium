@@ -1,100 +1,318 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    <link href='http://fonts.googleapis.com/css?family=Montserrat|Lato&subset=latin,latin-ext' rel='stylesheet'
-      type='text/css'>
-    <link rel="stylesheet" href="css/style.css">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link href='http://fonts.googleapis.com/css?family=Montserrat|Lato&subset=latin,latin-ext' rel='stylesheet'
+    type='text/css'>
+  <link rel="stylesheet" href="css/style.css">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
     integrity="sha384-INTEGRITY_HASH>" crossorigin="anonymous">
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-    <title>Gallery</title>
-  </head>
-  <body>
-    <header class="">
-        <!-- place navbar here -->
-        <nav class="navbar bg-body-tertiary d-lg-block d-md-block d-none bg-light ">
-          <form class="container-fluid mt-1 ">
-            <!-- <button class="btn btn-outline-success me-2" type="button">Main button</button> -->
-            <button class="btn btn-sm fw-semibold bg-white btn-outline-secondary text-dark " type="button">
-              Timing: 9am - 5pm
-            </button>
-            <div class="d-flex flex-row-reverse">
-              <div class="p-2 py-0 ">
-                <a href="" class="text-decoration-none">
-                  <small class=" text-dark fw-semibold"> Log In</small>
-                </a>
-              </div>
-              <div class="p-2 border-end border-dark py-0 "><a href="" class="text-decoration-none">
-                  <small class=" text-dark fw-semibold"> Create Account</small>
-                </a></div>
-              <div class="p-2 border-end border-dark py-0"><a href="" class="text-decoration-none ">
-                  <small class=" text-dark fw-semibold "> Membership</small>
-                </a></div>
-            </div>
-          </form>
-        </nav>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary bg-white navbar-white ">
-          <div class="container-fluid">
-            <div class="logo spinner-grow"></div>
-            <a class="navbar-brand pt-3 mx-2" href="./">
-              <h3 class="font-mont" style="font-weight:700; font-family:Montserrat;">
-                Nexus Aquarium</h3>
+  <title>Gallery</title>
+</head>
+
+<body>
+  <header class="">
+    <!-- place navbar here -->
+    <nav class="navbar bg-body-tertiary d-lg-block d-md-block d-none bg-light ">
+      <form class="container-fluid mt-1 ">
+        <!-- <button class="btn btn-outline-success me-2" type="button">Main button</button> -->
+        <button class="btn btn-sm fw-semibold bg-white btn-outline-secondary text-dark " type="button">
+          Timing: 9am - 5pm
+        </button>
+        <div class="d-flex flex-row-reverse">
+          <div class="p-2 py-0 ">
+            <a href="" class="text-decoration-none">
+              <small class=" text-dark fw-semibold"> Log In</small>
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-              aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
-              <div class="w-100">&nbsp;</div>
-              <div class="d-md-flex justify-content-around w-100">
-                <div>
-                  <ul class="navbar-nav font-lato">
-                    <li class="nav-item menu-item">
-                      <a class="nav-link fw-bold active fs-6 mx-3" aria-current="page" href="./index.html">Home</a>
-                    </li>
-                    <li class="nav-item dropdown menu-item">
-                      <a class="nav-link fw-bold active dropdown-toggle fs-6 mx-3" href="#" role="button"
-                        data-bs-toggle="dropdown" aria-expanded="false">
-                        Animals
-                      </a>
-                      <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="./sharks.html">Sharks</a></li>
-                        <li><a class="dropdown-item" href="#">Turtles</a></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        <li><a class="dropdown-item" href="#"></a></li>
-                        <li><a class="dropdown-item" href="#"></a></li>
-                        <li><a class="dropdown-item" href="#"></a></li>
-                        <li><a class="dropdown-item" href="#"></a></li>
-                        <li><a class="dropdown-item" href="#"></a></li>
-                      </ul>
-                    </li>
-                    <li class="nav-item menu-item">
-                      <a class="nav-link fw-bold active fs-6 mx-3" href="./about.html">About</a>
-                    </li>
+          </div>
+          <div class="p-2 border-end border-dark py-0 "><a href="" class="text-decoration-none">
+              <small class=" text-dark fw-semibold"> Create Account</small>
+            </a></div>
+          <div class="p-2 border-end border-dark py-0"><a href="" class="text-decoration-none ">
+              <small class=" text-dark fw-semibold "> Membership</small>
+            </a></div>
+        </div>
+      </form>
+    </nav>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary bg-white navbar-white ">
+      <div class="container-fluid">
+        <div class="logo spinner-grow"></div>
+        <a class="navbar-brand pt-3 mx-2" href="./">
+          <h3 class="font-mont" style="font-weight:700; font-family:Montserrat;">
+            Nexus Aquarium</h3>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+          <div class="w-100">&nbsp;</div>
+          <div class="d-md-flex justify-content-around w-100">
+            <div>
+              <ul class="navbar-nav font-lato">
+                <li class="nav-item menu-item">
+                  <a class="nav-link fw-bold active fs-6 mx-3" aria-current="page" href="./index.html">Home</a>
+                </li>
+                <li class="nav-item dropdown menu-item">
+                  <a class="nav-link fw-bold active dropdown-toggle fs-6 mx-3" href="#" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    Animals
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="./sharks.html">Sharks</a></li>
+                    <li><a class="dropdown-item" href="./turtles.html">Turtles</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    <li><a class="dropdown-item" href="#"></a></li>
+                    <li><a class="dropdown-item" href="#"></a></li>
+                    <li><a class="dropdown-item" href="#"></a></li>
+                    <li><a class="dropdown-item" href="#"></a></li>
+                    <li><a class="dropdown-item" href="#"></a></li>
                   </ul>
-                </div>
-                <div class="d-grid gap-2 d-md-flex justify-content-md-end ">
-                  <button type="button" class="btn rounded-pill font-lato shadow bg-warning text-dark fw-bold ">Buy
-                    Tickets</button>
-                </div>
-              </div>
+                </li>
+                <li class="nav-item menu-item">
+                  <a class="nav-link fw-bold active fs-6 mx-3" href="./about.html">About</a>
+                </li>
+              </ul>
+            </div>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end ">
+              <button type="button" class="btn rounded-pill font-lato shadow bg-warning text-dark fw-bold ">Buy
+                Tickets</button>
             </div>
           </div>
-        </nav>
-      </header>
-      <main>
+        </div>
+      </div>
+    </nav>
+  </header>
 
-      </main>
+  <div class="bgpic1">
 
-    <!-- Bootstrap JavaScript -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-  </body>
+    <img src="./gallery-Images/background pic.jpg" alt="error">
+    <h1 class="hbg">Gallery</h1>
+    <p class="pbg"> For Sharks</p>
+  </div>
+  <br>
+
+  <!-------- cards -------->
+
+
+  <div class="container3 align-items-center justify-content-center ">
+    <div class="box">
+      <div class="body1">
+        <div class="imgContainer">
+          <img src="./gallery-Images/angel shark1.jpg" alt="error">
+        </div>
+        <div class="content d-flex flex-column align-items-center justify-content-center">
+          <div>
+            <h3 class="text-black fs-3">Angel Shark</h3>
+            <p class="fs-10 text-black">The angelsharks are a group of sharks in the genus Squatina of the family
+              Squatinidae. They commonly inhabit sandy seabeds close to 150 m (490 ft) in depth. Many species are now
+              classified as critically endangered by the International Union for Conservation of Nature. Once common
+              over large areas of the Northeast Atlantic from Norway, Sweden, Morocco and the Canary Islands, to the
+              Mediterranean and Black Seas, there is now significant fishing pressure which has resulted in significant
+              population decline</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="box">
+      <div class="body1">
+        <div class="imgContainer">
+          <img src="./gallery-Images/bamboo shark2.jpg" alt="">
+        </div>
+        <div class="content d-flex flex-column align-items-center justify-content-center">
+          <div>
+            <h3 class="text-black fs-3">Bamboo Sharks</h3>
+            <p class="fs-10 text-black">The whitespotted bamboo shark (Chiloscyllium plagiosum) is a carpet shark with
+              an adult size that approaches one metre in length.[2] This small, mostly nocturnal species is harmless to
+              humans. The whitespotted bamboo shark is occasionally kept as a pet in larger home aquaria. It can grow up
+              to 93 centimetres (37 in) long.[3] </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="box">
+      <div class="body1">
+        <div class="imgContainer">
+          <img src="./gallery-Images/Blacknose shark4.jpg" alt="">
+        </div>
+        <div class="content d-flex flex-column align-items-center justify-content-center">
+          <div>
+            <h3 class="text-black fs-3">Blacknose Shark</h3>
+            <p class="fs-10 text-black">The blacknose shark (Carcharhinus acronotus) is a species of requiem shark,
+              belonging to the family Carcharhinidae, common in the tropical and subtropical waters of the western
+              Atlantic Ocean.[2] This species generally inhabits coastal seagrass, sand, or rubble habitats, with adults
+              preferring deeper water than juveniles. A small shark typically measuring 1.3 m (4.3 ft) long, the
+              blacknose has a typical streamlined "requiem shark" shape with a long, rounded snout, large eyes, and a
+              small first dorsal fin. Its common name comes from a characteristic black blotch on the tip of its snout,
+              though this may be indistinct in older individuals.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="box">
+      <div class="body1">
+        <div class="imgContainer">
+          <img src="./gallery-Images/basking shark3.jpg" alt="">
+        </div>
+        <div class="content d-flex flex-column align-items-center justify-content-center">
+          <div>
+            <h3 class="text-black fs-3">Post Title</h3>
+            <p class="fs-10 text-black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo sed cum
+              neque, rem provident ex. Laboriosam perspiciatis modi eveniet in?</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <br>
+  <div class="container2 align-items-center justify-content-center ">
+    <div class="box">
+      <div class="body1">
+        <div class="imgContainer">
+          <img src="./gallery-Images/angel shark1.jpg" alt="error">
+        </div>
+        <div class="content d-flex flex-column align-items-center justify-content-center">
+          <div>
+            <h3 class="text-black fs-3">Basking sharks</h3>
+            <p class="fs-10 text-black">The basking shark (Cetorhinus maximus) is the second-largest living shark and
+              fish,[4] after the whale shark, and one of three plankton-eating shark species, along with the whale shark
+              and megamouth shark. Adults typically reach 7.9 m (26 ft) in length. It is usually greyish-brown, with
+              mottled skin, with the inside of the mouth being white in color. The caudal fin has a strong lateral keel
+              and a crescent shape. Other common names include bone shark, elephant shark, sail-fish, and sun-fish. In
+              Orkney it is called hoe-mother (contracted homer), meaning "the mother of the picked dog-fish".[5].</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="box">
+      <div class="body1">
+        <div class="imgContainer">
+          <img
+            src="https://images.pexels.com/photos/1532771/pexels-photo-1532771.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+            alt="">
+        </div>
+        <div class="content d-flex flex-column align-items-center justify-content-center">
+          <div>
+            <h3 class="text-black fs-3">Bamboo Sharks</h3>
+            <p class="fs-10 text-black">The whitespotted bamboo shark (Chiloscyllium plagiosum) is a carpet shark with
+              an adult size that approaches one metre in length.[2] This small, mostly nocturnal species is harmless
+              to humans. </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="box">
+      <div class="body1">
+        <div class="imgContainer">
+          <img
+            src="https://images.pexels.com/photos/573238/pexels-photo-573238.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260"
+            alt="">
+        </div>
+        <div class="content d-flex flex-column align-items-center justify-content-center">
+          <div>
+            <h3 class="text-white fs-5">Post Title</h3>
+            <p class="fs-6 text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo sed cum
+              neque, rem provident ex. Laboriosam perspiciatis modi eveniet in?</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="box">
+      <div class="body1">
+        <div class="imgContainer">
+          <img
+            src="https://images.pexels.com/photos/573238/pexels-photo-573238.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260"
+            alt="">
+        </div>
+        <div class="content d-flex flex-column align-items-center justify-content-center">
+          <div>
+            <h3 class="text-white fs-5">Post Title</h3>
+            <p class="fs-6 text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo sed cum
+              neque, rem provident ex. Laboriosam perspiciatis modi eveniet in?</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Bootstrap JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+
+  <footer class="mt-5">
+    <div class="footer pt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-sm-4 col-xs-12">
+            <div class="single_footer">
+              <h4 class="font-mont">Services</h4>
+              <ul class="font-lato">
+                <li><a href="#" class="text-decoration-none fw-semibold">Events</a></li>
+                <li><a href="#" class="text-decoration-none fw-semibold">Explore</a></li>
+                <li><a href="#" class="text-decoration-none fw-semibold">Contact US</a></li>
+                <li><a href="#" class="text-decoration-none fw-semibold">FAQs</a></li>
+                <li><a href="#" class="text-decoration-none fw-semibold">Visit US</a></li>
+              </ul>
+            </div>
+          </div><!--- END COL -->
+          <div class="col-md-4 col-sm-4 col-xs-12">
+            <div class="single_footer single_footer_address">
+              <h4 class="font-mont fw-semibold">Page Link</h4>
+              <ul class="font-lato">
+                <li><a href="#" class="text-decoration-none fw-semibold">Membership</a></li>
+                <li><a href="#" class="text-decoration-none fw-semibold">Create Account</a></li>
+                <li><a href="#" class="text-decoration-none fw-semibold">Log In</a></li>
+                <li><a href="#" class="text-decoration-none fw-semibold">Buy Tickets</a></li>
+              </ul>
+            </div>
+          </div><!--- END COL -->
+          <div class="col-md-4 col-sm-4 col-xs-12">
+            <div class="single_footer single_footer_address">
+              <h4 class="font-mont">Subscribe today</h4>
+              <div class="signup_form">
+                <form action="#" class="subscribe">
+                  <input type="text" class="subscribe__input" placeholder="Enter Email Address">
+                  <button type="button" class="subscribe__btn"><i class="fas fa-paper-plane"></i></button>
+                </form>
+              </div>
+            </div>
+            <div class="social_profile">
+              <ul>
+                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+              </ul>
+            </div>
+          </div><!--- END COL -->
+        </div><!--- END ROW -->
+        <div class="row">
+          <div class="col-lg-12 col-sm-12 col-xs-12">
+            <p class="copyright">Copyright © 2023 <a href="#" class="text-decoration-none">Nexus Aquarium</a>.</p>
+          </div><!--- END COL -->
+        </div><!--- END ROW -->
+      </div><!--- END CONTAINER -->
+    </div>
+
+  </footer>
+
+</body>
+
 </html>
