@@ -494,10 +494,13 @@ h1 {
 .hbg{
   margin-top: -500px;
   font-size: 100px;
+  color:grey;
 }
 .pbg{
   margin-left: 700px;
   font-size: 35px;
+  color: grey;
+  
 }
 
 .container2{
@@ -614,5 +617,6 @@ h1 {
   /* perspective: 1000px; */
   cursor: pointer;
 
+}
 }
 /* Ali's cards end */
