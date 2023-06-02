@@ -471,7 +471,7 @@ h1 {
     left: 0;
     width: 100%;
     height: 100%;
-    background: lightblue;
+    background: #041757;
     backface-visibility: hidden;
     transform-style: preserve-3d;
     transform: rotateY(180deg);
@@ -557,7 +557,7 @@ h1 {
   left: 0;
   width: 100%;
   height: 100%;
-  background: lightblue;
+  background: #041757;
   backface-visibility: hidden;
   transform-style: preserve-3d;
   transform: rotateY(180deg);
@@ -576,6 +576,9 @@ h1 {
 
 .container2 .box .body1 .content div h3{
   letter-spacing: 1px;
+}
+.hu{
+  color: #efff;
 }
 @media screen and (max-width: 412px) {
   .hbg{
