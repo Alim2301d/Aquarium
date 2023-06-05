@@ -4,7 +4,7 @@
     height: 50px;
     background-color: rgb(0, 55, 104);
     border-radius: 50%;
-    background-image: url(../Logo/OIG.Df4o3f7gO4Xk6Qy.jpg);
+    background-image: url(../Assets/Logo/OIG.Df4o3f7gO4Xk6Qy.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -88,7 +88,7 @@
   }
 }
 .ex-section{
-  background-image: url(../img/sb-our-gallery-bg.png);
+  background-image: url(../Assets/img/sb-our-gallery-bg.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
