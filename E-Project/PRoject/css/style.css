@@ -419,7 +419,7 @@ h1 {
 
 .container3{
     transform-style: preserve-3d;
-    margin-top: 300px;
+    /* margin-top: 300px; */
     width: 100%;
     display: flex;
 }
@@ -578,9 +578,14 @@ h1 {
 .container2 .box .body1 .content div h3{
   letter-spacing: 1px;
 }
-.hu{
-  color: #efff;
+#btns{
+  margin-top: 300px;
 }
+#btns button{
+text-align: center;
+}
+
+/* ------------media query section ----------------*/
 @media screen and (max-width: 412px) {
   .hbg{
     margin-top: -500px;
