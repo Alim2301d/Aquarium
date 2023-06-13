@@ -9,6 +9,11 @@ $(document).ready(function(){
     $('#a').show();
      $('#b').hide();
      $('#c').hide();
+     $('#d').hide();
+     $('#e').hide();
+     $('#f').hide();
+     $('#g').hide();
+     $('#h').hide();
    });
 
    $('#dolphins').on("click", function (){
