@@ -390,107 +390,12 @@ h1 {
 }
 /* Ali's cards */
 
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
-
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
-
 .bgpic1 img{
   background-size: cover;
   width: 100%;
-  height: 700px;
+  height: 835px;
   display: block;
   
-}
-
-.body1{
-    
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-
-.container3{
-    transform-style: preserve-3d;
-    /* margin-top: 300px; */
-    width: 100%;
-    display: flex;
-}
-
-.container3 .box{
-    position: relative;
-    width: 600px;
-    height: 400px;
-    margin: 10px;
-    transform-style: preserve-3d;
-    /* perspective: 1000px; */
-    cursor: pointer;
-    
-}
-
-.container3 .box .body1{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    transform-style: preserve-3d;
-    transition: 0.9s ease;
-}
-
-
-
-.container3 .box .body1 .imgContainer{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    transform-style: preserve-3d;
-}
-
-.container3 .box .body1 .imgContainer img{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    
-}
-
-.container3 .box .body1 .content{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: #041757;
-    backface-visibility: hidden;
-    transform-style: preserve-3d;
-    transform: rotateY(180deg);
-}
-
-.container3 .box:hover .body1{
-    transform: rotateY(180deg);
-}
-
-.container3 .box .body1 .content div{
-    transform-style: preserve-3d;
-    padding: 20px;
-    background: linear-gradient(45deg, transparent);
-    transform: translateZ(100px);
-}
-
-.container3 .box .body1 .content div h3{
-    letter-spacing: 1px;
 }
 .hbg{
   margin-top: -500px;
@@ -504,165 +409,100 @@ h1 {
   
 }
 
-.container2{
-  transform-style: preserve-3d;
-  width: 100%;
+.mflip {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  justify-content: space-between;
+  justify-content: space-around;
 }
 
-.container2 .box{
-  position: relative;
-  width: 600px;
-  height: 400px;
+.cantainer1 {
+  width: 350px;
+  height: 500px;
+  perspective: 1000px;
   margin: 10px;
-  transform-style: preserve-3d;
-  /* perspective: 1000px; */
-  cursor: pointer;
-  
 }
 
-.container2 .box .body1{
-  position: absolute;
-  top: 0;
-  left: 0;
+.card {
   width: 100%;
   height: 100%;
   transform-style: preserve-3d;
-  transition: 0.9s ease;
+  transition: transform 0.9s;
 }
 
-
-
-.container2 .box .body1 .imgContainer{
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  transform-style: preserve-3d;
+.cantainer1 > .card:hover {
+  transform: rotateY(180deg);
 }
 
-.container2 .box .body1 .imgContainer img{
+.front,
+.back {
   position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  
-}
-
-.container2 .box .body1 .content{
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: #041757;
   backface-visibility: hidden;
-  transform-style: preserve-3d;
-  transform: rotateY(180deg);
+  border-radius: 2rem;
 }
 
-.container2 .box:hover .body1{
-  transform: rotateY(180deg);
+.front {
+  color: #000;
+  background-size: cover;
+}
+.front img{
+  width: 350px;
+  height: 500px;
+  border-radius: 2rem;
 }
 
-.container2 .box .body1 .content div{
-  transform-style: preserve-3d;
+.back {
+  background-color: #041757;
+  color: #ffff;
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding: 20px;
-  background: linear-gradient(45deg, transparent);
-  transform: translateZ(100px);
+  transform: rotateY(180deg);
+  text-align: center;
 }
 
-.container2 .box .body1 .content div h3{
-  letter-spacing: 1px;
+.back h1,
+.back p {
+  margin: 0;
 }
 #btns{
   margin-top: 300px;
 }
-#btns button{
-text-align: center;
-}
 
-/* ------------media query section ----------------*/
-@media screen and (max-width: 412px) {
-
-  .bgpic1 img{
-    width: 100%;
-    height: 300px;
+@media screen and (max-width: 600px) {
+  .cantainer1 {
+    width: 250px;
+    height: 250px;
   }
-  .container3{
-    display:block ;
-    
+  .front img{
+    width: 250px;
+    height: 250px;
   }
-  .container3 .box{
-    width: 300px;
-    height: 450px;
-    margin: 10px;
-    margin-left: 50px;
-    transform-style: preserve-3d;
-    /* perspective: 1000px; */
-    cursor: pointer;
-
-}
-.container2{
-  display:block ;
-  
-}
-.container2 .box{
-  width: 300px;
-  height: 450px;
-  margin: 10px;
-  margin-left: 50px;
-  transform-style: preserve-3d;
-  /* perspective: 1000px; */
-  cursor: pointer;
-
-}
-}
-  @media only screen and (max-width:768px) { 
-    .hbg{
-    margin-top: -500px;
-    font-size: 100px;
+  .h0{
+    font-size: 20px;
+  }
+  .p0{
+    font-size: 10px;
+  }
+  .hbg{
+    /* margin-top: -500px;
+    font-size: 100px; */
   }
   .pbg{
-    margin-left: 50px;
-    font-size: 35px;
+    /* margin-left: 50px;
+    font-size: 35px; */
   }
   .bgpic1 img{
     width: 100%;
     height: 300px;
   }
-  .container3{
-    display:block ;
-    
-  }
-  .container3 .box{
-    width: 300px;
-    height: 450px;
-    margin: 10px;
-    margin-left: 50px;
-    transform-style: preserve-3d;
-    /* perspective: 1000px; */
-    cursor: pointer;
-
 }
-.container2{
-  display:block ;
-  
-}
-.container2 .box{
-  width: 300px;
-  height: 450px;
-  margin: 10px;
-  margin-left: 50px;
-  transform-style: preserve-3d;
-  /* perspective: 1000px; */
-  cursor: pointer;
-
-}
-  }
 
 
 /* Ali's cards end */
