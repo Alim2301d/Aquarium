@@ -1,0 +1,1244 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Gallery</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1,
+      shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link href='http://fonts.googleapis.com/css?family=Montserrat|Lato&subset=latin,latin-ext' rel='stylesheet'
+    type='text/css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    integrity="sha384-INTEGRITY_HASH>" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+    </script>
+
+  <!-- <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+      integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+      crossorigin="anonymous">
+  </script> -->
+  <script src="https://code.jquery.com/jquery-3.7.0.slim.min.js"
+    integrity="sha256-tG5mcZUtJsZvyKAxYLVXrmjKBVLd6VpVccqz/r4ypFE=" crossorigin="anonymous"></script>
+  <script src="./js/main.js"></script>
+</head>
+<div class="modal" tabindex="-1" id="LoginModal">
+  <div class="modal-dialog">
+    <div class="modal-content ">
+      <div class="modal-header">
+        <h5 class="modal-title">Login To Nexus Aquarium</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="form-floating mb-3">
+          <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+          <label for="floatingInput">Email address</label>
+        </div>
+        <div class="form-floating">
+          <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+          <label for="floatingPassword">Password</label>
+
+        </div>
+        <div class="form-check my-2">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+          <label class="form-check-label" for="flexCheckChecked">
+            Remember me
+          </label>
+        </div>
+        <div class="my-3">
+          <div class="btn btn-primary">Login</div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal" tabindex="-1" id="SignUpModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Get an Nexus Account<h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="form-floating mb-3">
+          <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+          <label for="floatingInput">Email address</label>
+        </div>
+        <div class="form-floating">
+          <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+          <label for="floatingPassword">Password</label>
+
+        </div>
+        <div class="form-floating">
+          <input type="password" class="form-control my-3" id="floatingPassword" placeholder="Password">
+          <label for="floatingPassword"> Confirm Password</label>
+
+        </div>
+
+        <div class="my-3">
+          <div class="btn btn-primary">Create an Account</div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+<body>
+  <header class="">
+    <!-- place navbar here -->
+    <nav class="navbar bg-body-tertiary d-lg-block d-md-block d-none bg-light ">
+      <form class="container-fluid mt-1 ">
+        <!-- <button class="btn btn-outline-success me-2" type="button">Main button</button> -->
+        <button class="btn btn-sm fw-semibold bg-white btn-outline-secondary text-dark " type="button">
+          Timing: 9am - 5pm
+        </button>
+        <div class="d-flex flex-row-reverse">
+          <div class="p-2 py-0 ">
+            <a href="Loginmodal" class="text-decoration-none" type="submit" data-bs-toggle="modal"
+              data-bs-target="#LoginModal">
+              <small class=" text-dark fw-semibold"> Log In</small>
+            </a>
+          </div>
+          <div class="p-2 border-end border-dark py-0 "><a href="#SignUpModal" type="submit" data-bs-toggle="modal"
+              data-bs-target="#SignUpModal" class="text-decoration-none">
+              <small class=" text-dark fw-semibold"> Create Account</small>
+            </a></div>
+          <div class="p-2 border-end border-dark py-0"><a href="" class="text-decoration-none ">
+              <small class=" text-dark fw-semibold "> Membership</small>
+            </a></div>
+        </div>
+      
+      </form>
+    </nav>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary bg-white navbar-white ">
+      <div class="container-fluid">
+        <div class="logo "></div>
+        <a class="navbar-brand pt-3 mx-2" href="./index.html">
+          <h3 class="font-mont" style="font-weight:700; font-family:Montserrat;">
+            Nexus Aquarium</h3>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+          <div class="w-100">&nbsp;</div>
+          <div class="d-md-flex justify-content-around w-100">
+            <div>
+              <ul class="navbar-nav font-lato">
+                <li class="nav-item menu-item">
+                  <a class="nav-link fw-bold active fs-6 mx-3" aria-current="page" href="./index.html">Home</a>
+                </li>
+                <li class="nav-item  menu-item">
+                  <a class="nav-link fw-bold active fs-6 mx-3" href="./Sharks1.html">
+                    Animals
+                  </a>
+
+                </li>
+                <li class="nav-item menu-item">
+                  <a class="nav-link fw-bold active fs-6 mx-3" href="./about.html">About</a>
+                </li>
+                <li class="">
+                  <a href="#SignUpModal" type="submit" data-bs-toggle="modal" data-bs-target="#SignUpModal"
+                    class="text-decoration-none nav-link fw-bold active  fs-6 mx-3 d-md-block d-lg-none  d-sm-block bg-white ">
+                    <small class=" text-dark fw-semibold"> Create Account</small>
+                  </a>
+                </li>
+                <li class="">
+                  <a href="#Loginmodal" class="text-decoration-none nav-link fw-bold active  fs-6 mx-3 d-md-block d-lg-none  d-sm-block bg-white" type="submit" data-bs-toggle="modal"
+                    data-bs-target="#LoginModal" >
+                    <small class=" text-dark fw-semibold"> Log In</small>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end ">
+              <a href="./ticket.html" type="button"
+                class=" mt-1 btn rounded-pill font-lato shadow bg-warning text-dark fw-bold text-decoration-none text-capitalize">buy
+                tickets</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div class="bgpic1">
+
+      <img src="./Assets/gallery-Images/background pic.jpg" alt="error">
+      <h1 class="hbg">Gallery</h1>
+      <p class="pbg"> For Animals</p>
+    </div>
+    <br>
+
+    <!-------- cards -------->
+    <section id="btns" class="mx-5">
+      <button type="button" style="background-color:  #041757; color: white;"
+        class="btn text-capitalize fw-semibold rounded-5  " id="all">all</button>
+      <button type="button" style="background-color:  #041757; color: white;"
+        class="btn text-capitalize fw-semibold rounded-5  " id="sharks">sharks</button>
+      <button type="button" style="background-color:  #041757; color: white;"
+        class="btn text-capitalize fw-semibold rounded-5 " id="dolphins">dolphins</button>
+      <button type="button" style="background-color:  #041757; color: white;"
+        class="btn text-capitalize fw-semibold rounded-5 " id="penguins">penguins</button>
+      <button type="button" style="background-color:  #041757; color: white;"
+        class="btn text-capitalize fw-semibold rounded-5 " id="turtles"> turtles</button>
+      <button type="button" style="background-color:  #041757; color: white;"
+        class="btn text-capitalize fw-semibold rounded-5  " id="Whales">whales</button>
+      <button type="button" style="background-color:  #041757; color: white;"
+        class="btn text-capitalize fw-semibold rounded-5 " id="Octopus">Octopus</button>
+      <button type="button" style="background-color:  #041757; color: white;"
+        class="btn text-capitalize fw-semibold rounded-5 " id="JellyFish">Jelly Fish</button>
+      <button type="button" style="background-color:  #041757; color: white;"
+        class="btn text-capitalize fw-semibold rounded-5 " id="RayFish">Ray Fish</button>
+
+      <!-- <button type="button" class="btn btn-link">Link</button> -->
+    </section>
+    <br>
+    <section id="a">
+      <div class="mflip">
+        <div class="cantainer1">
+          <div class="card rounded-5">
+            <div class="front"> <img src="./Assets/gallery-Images/section a/angel shark1.jpg" alt="Error"></div>
+            <div class="back">
+              <h1 class="h0">Angel Shark</h1><br>
+              <p class="p0">The angelsharks are a group of
+                sharks in the genus Squatina of the family
+                Squatinidae. They commonly inhabit sandy seabeds close to
+                150 m (490 ft) in depth. Many species are now
+                classified as critically endangered by the International
+                Union for Conservation of Nature.</p>
+            </div>
+          </div>
+        </div>
+        <div class="cantainer1">
+          <div class="card rounded-5">
+            <div class="front"> <img src="./Assets/gallery-Images/section a/bamboo shark2.jpg" alt="Error"></div>
+            <div class="back">
+              <h1 class="h0">Bamboo Sharks</h1><br>
+              <p class="p0">The whitespotted bamboo shark
+                (Chiloscyllium plagiosum) is a carpet shark with
+                an adult size that approaches one metre in length.[2] This
+                small, mostly nocturnal species is harmless to
+                humans. The whitespotted bamboo shark is occasionally kept
+                as a pet in larger home aquaria.</p>
+            </div>
+          </div>
+        </div>
+        <div class="cantainer1">
+          <div class="card rounded-5">
+            <div class="front"> <img src="./Assets/gallery-Images/section a/Blacknose shark4.jpg" alt="Error"></div>
+            <div class="back">
+              <h1 class="h0">Blacknose Shark</h1><br>
+              <p class="p0">The blacknose shark
+                (Carcharhinus acronotus) is a species of requiem shark,
+                belonging to the family Carcharhinidae, common in the
+                tropical and subtropical waters of the western
+                Atlantic Ocean.[2] This species generally inhabits coastal
+                seagrass, sand, or rubble habitats, with adults
+                preferring deeper water than juveniles.</p>
+            </div>
+          </div>
+        </div>
+        <div class="cantainer1">
+          <div class="card rounded-5">
+            <div class="front"> <img src="./Assets/gallery-Images/section a/basking shark3.jpg" alt="Error"></div>
+            <div class="back">
+              <h1 class="h0">Basking Shark</h1><br>
+              <p class="p0">The basking shark (Cetorhinus
+                maximus) is the second-largest living shark and
+                fish,[4] after the whale shark, and one of three
+                plankton-eating shark species, along with the whale shark
+                and megamouth shark. Adults typically reach 7.9 m (26 ft) in
+                length. It is usually greyish-brown, with
+                mottled skin, with the inside of the mouth being white in
+                color.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="mflip">
+        <div class="cantainer1">
+          <div class="card rounded-5">
+            <div class="front"> <img src="./Assets/gallery-Images/section a/black tip reef shark5.jpg" alt="Error">
+            </div>
+            <div class="back">
+              <h1 class="h0">Blacktip Reef Shark</h1><br>
+              <p class="p0"> The blacktip reef shark (Carcharhinus melanopterus) is a
+                species of requiem shark, in the family
+                Carcharhinidae, which can be easily identified by the
+                prominent black tips on its fins (especially on the
+                first dorsal fin and its caudal fin). Among the most
+                abundant sharks inhabiting the tropical coral reefs
+                of the Indian and Pacific Oceans.</p>
+            </div>
+          </div>
+        </div>
+        <div class="cantainer1">
+          <div class="card rounded-5">
+            <div class="front"> <img src="./Assets/gallery-Images/section a/black tip shark6.jpg" alt="Error"></div>
+            <div class="back">
+              <h1 class="h0">Blacktip Shark</h1><br>
+              <p class="p0">The blacktip shark
+                (Carcharhinus limbatus) is a species of requiem shark, and
+                part of the family Carcharhinidae. It is common to coastal
+                tropical and subtropical waters around the
+                world, including brackish habitats. Genetic analyses have
+                revealed substantial variation within this
+                species.</p>
+            </div>
+          </div>
+        </div>
+        <div class="cantainer1">
+          <div class="card rounded-5">
+            <div class="front"> <img src="./Assets/gallery-Images/section a/copper Shark7.jpg" alt="Error"></div>
+            <div class="back">
+              <h1 class="h0">Copper Shark</h1><br>
+              <p class="p0">The copper shark (Carcharhinus
+                brachyurus), bronze whaler, or narrowtooth shark
+                is a species of requiem shark, family Carcharhinidae, found
+                mostly at temperate latitudes. It is
+                distributed in a number of separate populations in the
+                northeastern and southwestern Atlantic, off
+                southern Africa, in the northwestern and eastern Pacific,
+                and around Australia and New Zealand, with
+                scattered reports from equatorial regions.</p>
+            </div>
+          </div>
+        </div>
+        <div class="cantainer1">
+          <div class="card rounded-5">
+            <div class="front"> <img src="./Assets/gallery-Images/section a/bull shark8.webp" alt="Error"></div>
+            <div class="back">
+              <h1 class="h0">Bull Shark</h1><br>
+              <p class="p0">The bull shark (Carcharhinus
+                leucas), also known as the Zambezi shark
+                (informally zambi) in Africa and Lake Nicaragua shark in
+                Nicaragua, is a species of requiem shark commonly
+                found worldwide in warm, shallow waters along coasts and in
+                rivers. It is known for its aggressive nature,
+                and presence mainly in warm, shallow brackish and freshwater
+                systems including estuaries.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="b">
+      <div class="mflip">
+        <div class="cantainer1">
+          <div class="card rounded-5">
+            <div class="front"> <img src="./Assets/gallery-Images/section b/atlantic spoted dolphin.jpg" alt="Error">
+            </div>
+            <div class="back">
+              <h1 class="h0">Atlantic Spoted Dolphin</h1><br>
+              <p class="p0">The Atlantic spotted dolphin was first described by Cuvier in 1828. Considerable variation
+                in the physical form of individuals occurs in the species, and specialists have long been uncertain as
+                to the correct taxonomic classification. Currently, just one species is recognised.</p>
+            </div>
+          </div>
+        </div>
+        <div class="cantainer1">
+          <div class="card rounded-5">
+            <div class="front"> <img src="./Assets/gallery-Images/section b/bottlenose dolpin.jpg" alt="Error"></div>
+            <div class="back">
+              <h1 class="h0">Bottlenose dolphin</h1><br>
+              <p class="p0">Bottlenose dolphins are aquatic mammals in the genus Tursiops. They are common, cosmopolitan
+                members of the family Delphinidae, the family of oceanic dolphins.[2] Molecular studies show the genus
+                definitively contains two species: the common bottlenose dolphin (Tursiops truncatus) and the
+                Indo-Pacific bottlenose dolphin (Tursiops aduncus). </p>
+            </div>
+          </div>
+        </div>
+        <div class="cantainer1">
+          <div class="card rounded-5">
+            <div class="front"> <img src="./Assets/gallery-Images/section b/comerson dolphin.jpg" alt="Error"></div>
+            <div class="back">
+              <h1 class="h0">Commerson's dolphin</h1><br>
+              <p class="p0">Commerson's dolphin (Cephalorhynchus commersonii), also referred to by the common names
+                jacobita, skunk dolphin, piebald dolphin, panda dolphin, or tonina overa (in South America), is a small
+                oceanic dolphin of the genus Cephalorhynchus. Commerson's dolphin has two geographically-isolated but
+                locally-common subspecies. </p>
+            </div>
+          </div>
+        </div>
+        <div class="cantainer1">
+          <div class="card rounded-5">
+            <div class="front"> <img src="./Assets/gallery-Images/section b/DuskyDolphin.jpg" alt="Error"></div>
+            <div class="back">
+              <h1 class="h0">The dusky dolphin</h1><br>
+              <p class="p0">The dusky dolphin (Lagenorhynchus obscurus) is a dolphin found in coastal waters in the
+                Southern Hemisphere. Its specific epithet is Latin for "dark" or "dim". It is very closely genetically
+                related to the Pacific white-sided dolphin, but current scientific consensus holds they are distinct
+                species. </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="mflip">
+        <div class="cantainer1">
+          <div class="card rounded-5">
+            <div class="front"> <img src="./Assets/gallery-Images/section b/Spinner-Dolphin.png" alt="Error">
+            </div>
+            <div class="back">
+              <h1 class="h0">The spinner dolphin</h1><br>
+              <p class="p0"> The spinner dolphin (Stenella longirostris) is a small dolphin found in off-shore tropical
+                waters around the world. It is famous for its acrobatic displays in which it rotates around its
+                longitudinal axis as it leaps through the air. It is a member of the family Delphinidae of toothed
+                whales.</p>
+            </div>
+          </div>
+        </div>
+        <div class="cantainer1">
+          <div class="card rounded-5">
+            <div class="front"> <img src="./Assets/gallery-Images/section b/pantropical spotted dolphin.jpg"
+                alt="Error"></div>
+            <div class="back">
+              <h1 class="h0">The pantropical spotted dolphin</h1><br>
+              <p class="p0">The pantropical spotted dolphin (Stenella attenuata) is a species of dolphin found in all
+                the world's temperate and tropical oceans. The species was beginning to come under threat due to the
+                killing of millions of individuals in tuna purse seines. In the 1980s, the rise of "dolphin-friendly"
+                tuna capture methods saved millions of the species in the eastern Pacific Ocean and it is now one of the
+                most abundant dolphin species in the world.</p>
+            </div>
+          </div>
+        </div>
+        <div class="cantainer1">
+          <div class="card rounded-5">
+            <div class="front"> <img src="./Assets/gallery-Images/section b/Long-Beaked-Dolphin.png" alt="Error"></div>
+            <div class="back">
+              <h1 class="h0">long-beaked dolphin</h1><br>
+              <p class="p0">The long-beaked dolphin has a sleek body measuring 6-8.5 feet long. Adults can weigh
+                anywhere between 160 lbs. (72 kg) and 500 lbs. (226 kg).They have a considerably long rostrum (beak)
+                with 4767 fang-like teeth on either jaw. Another distinct feature is the relatively long,
+                triangular-shaped dorsal fin.Unlike most types of dolphins where the female is larger, long-beaked males
+                are nearly 5% larger than the females.</p>
+            </div>
+          </div>
+        </div>
+        <div class="cantainer1">
+          <div class="card rounded-5">
+            <div class="front"> <img src="./Assets/gallery-Images/section b/Orcas dolphin.png" alt="Error"></div>
+            <div class="back">
+              <h1 class="h0">The Orca</h1><br>
+              <p class="p0">One of the most famous dolphin names you’ve probably heard is the killer whale. Like all
+                dolphins, the orca is a whale.What sets it apart from other types of dolphins is that it is toothed and
+                belongs to the Delphinidae family.The killer whales are the largest dolphins worldwide and can grow over
+                26 feet (8 meters) long and weigh as much as 7,000 lbs. (3175 kg).Another unique fact is that killer
+                whales are called “whale killer.” We can all agree that it’s easier to flip around the words and call
+                the oceanic mammal a killer whale.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="c">
+      <div class="mflip">
+        <div class="cantainer1">
+          <div class="card rounded-5">
+            <div class="front"> <img src="./Assets/gallery-Images/section c/penguin 1.jpg" alt="Error"></div>
+            <div class="back">
+              <h1 class="h0">Adelie Penguin</h1><br>
+              <p class="p0">Adelie Penguins are members of the brush-tailed group of penguins, so-called for their long
+                tail feathers.
+                Population: 2.4 million breeding pairs
+                Weight and height: 4.6 kg – 5.3 kg, 70 cm
+                Conservation status: Least Concern
+                Population Trend: Increasing
+                Geographic Breeding Range: Antarctica; South Orkney Islands; South Sandwich Islands; </p>
+            </div>
+          </div>
+        </div>
+        <div class="cantainer1">
+          <div class="card rounded-5">
+            <div class="front"> <img src="./Assets/gallery-Images/section c/penguin 2.jpg" alt="Error"></div>
+            <div class="back">
+              <h1 class="h0">African Penguin</h1><br>
+              <p class="p0">The African Penguin is a member of the banded group of penguins. They are also known as the
+                Black-footed Penguin
+                Common Name: African Penguin; Black-footed Penguin; Jackass Penguin
+                Scientific name: Spheniscus demersus
+                Population: 15,000 breeding pairs
+                Weight and heights: 3.0 kg – 3.3 kg, 60 cm
+                Conservation status: Endangered
+                Population Trend: Decreasing
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="cantainer1">
+          <div class="card rounded-5">
+            <div class="front"> <img src="./Assets/gallery-Images/section c/penguin 3.jpg" alt="Error"></div>
+            <div class="back">
+              <h1 class="h0">Chinstrap Penguin</h1><br>
+              <p class="p0">The Chinstrap Penguin is easily distinguished by the conspicuous ear-to-ear black strap
+                under the chin. Chinstraps are members of the brush-tailed group of penguins.
+                Common Name: Chinstrap Penguin
+                Scientific name: Pygoscelis antarctica
+                Population: 4 million breeding pairs
+                Weight and height: 3.5 kg – 5.5 kg, 68 cm –76 cm
+                Conservation status: Least Concern
+                Population Trend: Decreasing
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="cantainer1">
+          <div class="card rounded-5">
+            <div class="front"> <img src="./Assets/gallery-Images/section c/penguin 4.jpg" alt="Error"></div>
+            <div class="back">
+              <h1 class="h0">Emperor Penguin</h1><br>
+              <p class="p0">The Emperor Penguin is the largest penguin, in both body mass and height.
+                Common Name: Emperor Penguin
+                Scientific name: Aptenodytes forsteri
+                Population: 120,000 breeding pairs (in 2012)
+                Weight and height: 32-40 kg, 1.2 meters
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="mflip">
+        <div class="cantainer1">
+          <div class="card rounded-5">
+            <div class="front"> <img src="./Assets/gallery-Images/section c/penguin 5.jpg" alt="Error">
+            </div>
+            <div class="back">
+              <h1 class="h0">Fiordland Penguin</h1><br>
+              <p class="p0"> The Fiordland Penguin is a member of the crested group of penguins. In New Zealand, these
+                birds are commonly referred to by their Maori name, tawaki.
+                Common Name: Fiordland Penguin; Tawaki
+                Scientific name: Eudyptes pachyrhynchus
+                Population: 1,500-5,000 breeding pairs
+                Weight and height: 3.0 kg – 4.5 kg and 55 cm
+                Conservation status: Near-Threatened
+                Population Trend: Decreasing
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="cantainer1">
+          <div class="card rounded-5">
+            <div class="front"> <img src="./Assets/gallery-Images/section c/penguin 6.jpg" alt="Error"></div>
+            <div class="back">
+              <h1 class="h0">Gentoo Penguin</h1><br>
+              <p class="p0">The Gentoo Penguin is the third largest penguin and also has the largest breeding range of
+                any penguin species. Gentoos are a member of the brush-tailed group of penguins.
+                Common Name: Gentoo Penguin
+                Scientific name: Pygoscelis papua
+                Population: 400,000 breeding pairs
+                Weight: 5 kg – 8 kg, 51 cm – 90 cm
+                Conservation status: Least Concern
+                Population Trend: Stable
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="cantainer1">
+          <div class="card rounded-5">
+            <div class="front"> <img src="./Assets/gallery-Images/section c/penguin 7.jpg" alt="Error"></div>
+            <div class="back">
+              <h1 class="h0">Humboldt Penguin</h1><br>
+              <p class="p0">The Humboldt Penguin is a member of the banded group of penguins.
+                Common Name: Humboldt Penguin; Peruvian Penguin
+                Scientific name: Spheniscus humboldti
+                Population: 16,000 breeding pairs
+                Weight and height: 4.2 kg – 5.0 kg, 67 cm – 72 cm
+                Conservation status: Vulnerable
+                Population Trend: Decreasing
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="cantainer1">
+          <div class="card rounded-5">
+            <div class="front"> <img src="./Assets/gallery-Images/section c/penguin 8.jpg" alt="Error"></div>
+            <div class="back">
+              <h1 class="h0">Snares Penguin</h1><br>
+              <p class="p0">The Snares Penguin is a member of the crested group of penguins. The Snares Penguin is
+                referred to by the indigenous Maori people of New Zealand as pokotiwha.
+                Common Name: Snares Penguin; Pokotiwha
+                Scientific name: Eudyptes robustus
+                Population: 32,000 breeding pairs
+                Weight and height: 2.8 kg – 3.4 kg and 51 cm – 61 cm
+                Conservation status: Vulnerable
+                Population Trend: Stable
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="d">
+      <div class="mflip">
+        <div class="cantainer1">
+          <div class="card rounded-5">
+            <div class="front"> <img src="./Assets/gallery-Images/section d/turtle 1.jpg" alt="Error"></div>
+            <div class="back">
+              <h1 class="h0">leatherback sea turtle</h1><br>
+              <p class="p0">The leatherback sea turtle is the largest and heaviest living turtle. It can grow to 5ft
+                11in and weighs up to 500kg. It is the only living species of the dermocheltdae family, characterized by
+                a different shell structure from other turtle shells. Other turtle shells have a bony structure, but the
+                leatherback turtle’s .
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="cantainer1">
+          <div class="card rounded-5">
+            <div class="front"> <img src="./Assets/gallery-Images/section d/turtle 2.jpg" alt="Error"></div>
+            <div class="back">
+              <h1 class="h0">Hawksbill sea turtle</h1><br>
+              <p class="p0">Hawksbill sea turtles have shells that change color based on the water temperature. We can
+                identify this turtle specie by its curved and pointed beak. A mature hawksbill turtle can grow up to 3ft
+                long with a weight of 80kg.
+                Hawksbill turtles.
+            </div>
+          </div>
+        </div>
+        <div class="cantainer1">
+          <div class="card rounded-5">
+            <div class="front"> <img src="./Assets/gallery-Images/section d/turtle 3.jpg" alt="Error"></div>
+            <div class="back">
+              <h1 class="h0">Alligator snapping turtle</h1><br>
+              <p class="p0">Alligator snapping turtles are the largest freshwater turtle species in the world. They have
+                large and heavy heads, while their thick shells resemble the scales of an ancient plated dinosaur called
+                Ankylosaurus. You can differentiate them from the common snapping turtle by the three ridges of spikes
+                on their carapaces..</p>
+            </div>
+          </div>
+        </div>
+        <div class="cantainer1">
+          <div class="card rounded-5">
+            <div class="front"> <img src="./Assets/gallery-Images/section d/turtle 4.jpg" alt="Error"></div>
+            <div class="back">
+              <h1 class="h0">spiny softshell Turtle</h1><br>
+              <p class="p0">A spiny softshell is a sizeable aquatic turtle, one of the largest out of most freshwater
+                turtles. They get their name from the structure of their shells which have cone-like projections at the
+                edge of their carapaces.
+                Also, you can recognize a spiny softshell by its soft, fleshy, and elongated nose. </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="mflip">
+        <div class="cantainer1">
+          <div class="card rounded-5">
+            <div class="front"> <img src="./Assets/gallery-Images/section d/turtle 5.webp" alt="Error">
+            </div>
+            <div class="back">
+              <h1 class="h0">Three-toed box turtles</h1><br>
+              <p class="p0"> Three-toed box turtles are endemic to the south-central regions of the United States. They
+                prefer to live in humid areas like swampy and hardwood forests7. However, they are popular in the pet
+                trade. They can live up to 50 years as pet turtles when cared for adequately. Furthermore, the
+                three-toed box turtle is the official reptile of the state of Missouri.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="cantainer1">
+          <div class="card rounded-5">
+            <div class="front"> <img src="./Assets/gallery-Images/section d/turtle 6.jpg" alt="Error"></div>
+            <div class="back">
+              <h1 class="h0">Eastern box turtle</h1><br>
+              <p class="p0">The eastern box turtle is endemic to the Eastern part of the United States. Eastern box
+                turtles are slow and terrestrial. The turtle’s shells are high and dome-shaped, with colors ranging from
+                brown to black. There are yellow and orange lines or spots on their carapace. Furthermore, a male
+                eastern box turtle has red irises, while females have brown irises.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="cantainer1">
+          <div class="card rounded-5">
+            <div class="front"> <img src="./Assets/gallery-Images/section d/turtle 7.webp" alt="Error"></div>
+            <div class="back">
+              <h1 class="h0">Chinese box turtle</h1><br>
+              <p class="p0">The Chinese box turtle is also known as the golden-headed turtle. It has a high dome-shaped
+                shell, higher than other turtles with dome-shaped shells. It has a dark brown carapace with creamy
+                yellow markings. Also, each gender has an extension of a yellow line from behind the eyes. The male
+                turtle has a broader tail than its female counterpart.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="cantainer1">
+          <div class="card rounded-5">
+            <div class="front"> <img src="./Assets/gallery-Images/section d/turtle 8.jpg" alt="Error"></div>
+            <div class="back">
+              <h1 class="h0">western painted turtle</h1><br>
+              <p class="p0">The western painted turtle is one of the largest subspecies of painted turtles.
+                Western-painted turtles have the lightest shell color out of the species’ shell colors. Their shells
+                have light patterns that look like a mesh design, while the under shell has large splotches of color
+                that spread to the edges of their shells. They can grow up to 10 inches long.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="e">
+      <div class="mflip">
+        <div class="cantainer1">
+          <div class="card rounded-5">
+            <div class="front"> <img src="./Assets/gallery-Images/section e/whale 1.webp" alt="Error"></div>
+            <div class="back">
+              <h1 class="h0">North Atlantic Whale</h1><br>
+              <p class="p0">Scientific Name: Eubalaena glacialis
+                Average Length: 16 meters
+                Weight: Up to 80 tonnes
+                The North Atlantic right whale is one of the three closely related whale species in the genus Eubalaena.
+                They were once a preferred whaling target due to their slow speed and submissive nature. While the
+                hunting activities have now ceased</p>
+            </div>
+          </div>
+        </div>
+        <div class="cantainer1">
+          <div class="card rounded-5">
+            <div class="front"> <img src="./Assets/gallery-Images/section e/whale 2.webp" alt="Error"></div>
+            <div class="back">
+              <h1 class="h0">Southern Whale</h1><br>
+              <p class="p0">Scientific Name: Eubalaena australis
+                Average Length: 15 meters
+                Weight: 80-90 tonnes
+                Unlike the other two right whale species, the Southern right whales are not threatened or endangered.
+                According to the most recent estimates, the Southern right whale population is close to 10,000
+                individuals and is fairly widespread in the lower part of the Southern Hemisphere.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="cantainer1">
+          <div class="card rounded-5">
+            <div class="front"> <img src="./Assets/gallery-Images/section e/whale 3.webp" alt="Error"></div>
+            <div class="back">
+              <h1 class="h0">Blue Whale</h1><br>
+              <p class="p0">Scientific Name: Balaenoptera musculus
+                Length: 29 meters
+                Weight: 173 tonnes
+                The Blue whale is one of the eight [and most prominent] species in the genus Balaenoptera. Once abundant
+                in the world’s oceans, the blue whale species now have about 10,000-25,000 individuals remaining today.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="cantainer1">
+          <div class="card rounded-5">
+            <div class="front"> <img src="./Assets/gallery-Images/section e/whale 4.webp" alt="Error"></div>
+            <div class="back">
+              <h1 class="h0">The sei Whale</h1><br>
+              <p class="p0">Scientific Name: Balaenoptera borealis
+                Length: 19.5 meters
+                Weight: 28 tonnes
+                The Sei whale is a large whale species in the genus Balaenoptera (same as the fin whale). They are
+                blueish grey in appearance and feature a pointed rostrum (front part of the whale’s mouth, including the
+                jaw) and arched dorsal fin. Sei whales may often present with flesh wounds (white scars) all over their
+                body. </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="mflip">
+        <div class="cantainer1">
+          <div class="card rounded-5">
+            <div class="front"> <img src="./Assets/gallery-Images/section e/whale 5.webp" alt="Error">
+            </div>
+            <div class="back">
+              <h1 class="h0">Gray back Whale</h1><br>
+              <p class="p0">Scientific Name: Eschrichtius robustus
+                Length: 12-16 meters
+                Weight: 25-30 tonnes
+                The grey or grey back whale is the only extant species of genus Eschrichtius. As the name suggests, grey
+                whales are dark grey in color and have numerous white spots all over their body.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="cantainer1">
+          <div class="card rounded-5">
+            <div class="front"> <img src="./Assets/gallery-Images/section e/whale 6.webp" alt="Error"></div>
+            <div class="back">
+              <h1 class="h0">Hector Whale</h1><br>
+              <p class="p0">Scientific Name: Cephalorhynchus hectori
+                Length: 1.4 meters
+                Weight: 40-60 kg
+                Hector’s dolphin is one of the four [and the most prominent] dolphin species in the genus
+                Cephalorhynchus. Not only are they the smallest, but also one of the rarest dolphins on Earth.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="cantainer1">
+          <div class="card rounded-5">
+            <div class="front"> <img src="./Assets/gallery-Images/section e/whale 7.webp" alt="Error"></div>
+            <div class="back">
+              <h1 class="h0">Pygmy killer whale</h1><br>
+              <p class="p0">Scientific Name: Feresa attenuata
+                Length: 2 meters
+                As the name suggests, pygmy killer whales are a much smaller version of the killer whales, also known as
+                Orcas. They are known to feed on small fish and even common dolphins.</p>
+            </div>
+          </div>
+        </div>
+        <div class="cantainer1">
+          <div class="card rounded-5">
+            <div class="front"> <img src="./Assets/gallery-Images/section e/whale 8.webp" alt="Error"></div>
+            <div class="back">
+              <h1 class="h0">short-finned pilot whale</h1><br>
+              <p class="p0">Scientific Name: Globicephala macrorhynchus
+                Length: 5.5 meters
+                Weight: 3,000 kg
+                The short-finned pilot whale is one of the two whale species of the genus Globicephala the other being
+                the long-finned pilot whale (Globicephala melas).</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="f">
+      <div class="mflip">
+        <div class="cantainer1">
+          <div class="card rounded-5">
+            <div class="front"> <img src="./Assets/gallery-Images/section f/octopus 1.jpg" alt="Error"></div>
+            <div class="back">
+              <h1 class="h0">The blue-ringed octopus</h1><br>
+              <p class="p0">The blue-ringed octopus Renowned for being one of the world's most venomous marine animals,
+                the blue-ringed octopus can inflict total body paralysis – even to humans.
+                This psychedelic looking octopus has upwards of 60 blue rings, these can vary in size of up to 8
+                millimeters in diameter which cover its entire body and arms. When provoked, these octopuses will flash
+                their 40 to 60 glowing blue rings to warn off predators.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="cantainer1">
+          <div class="card rounded-5">
+            <div class="front"> <img src="./Assets/gallery-Images/section f/octopus 2.webp" alt="Error"></div>
+            <div class="back">
+              <h1 class="h0">The dumbo octopus</h1><br>
+              <p class="p0">The dumbo octopus gives its name to a collective of 15 different species. Famous for being
+                the deepest dwelling octopus species, found at extreme depths of up to 13,000 feet (4,000 m).
+                This almost sightless octopus is also noted for their unusual appearance. Their protruding ear-like fins
+                resemble that of "Dumbo the Elephant’s". Some Dumbo species also resemble umbrellas when their arms are
+                spread open due to their connective webbed tentacles.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="cantainer1">
+          <div class="card rounded-5">
+            <div class="front"> <img src="./Assets/gallery-Images/section f/octopus 3.jpg" alt="Error"></div>
+            <div class="back">
+              <h1 class="h0">The mimic octopus</h1><br>
+              <p class="p0">The mimic octopus is the master of disguise and imitation. They have been known to mimic 15
+                different marine species including anemones, mantis shrimp, jellyfish, feather stars, giant crabs,
+                seahorses and more.
+                Many octopus species can change color and texture, but the mimic octopus takes this deception to another
+                level by also changing the way it moves its arms to impersonate other nearby marine animals.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="cantainer1">
+          <div class="card rounded-5">
+            <div class="front"> <img src="./Assets/gallery-Images/section f/octopus 4.jpg" alt="Error"></div>
+            <div class="back">
+              <h1 class="h0">Atlantic pygmy octopus</h1><br>
+              <p class="p0">Atlantic pygmy octopus are carnivores by nature and can be very selective about food. They
+                almost solely consume clams and other small crustaceans in large quantities.
+                Their usual feeding method involves digging through the hard shells and paralyzing their victims with
+                their poisonous saliva. Once their catch is fully immobilized, they gobble them up.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="mflip">
+        <div class="cantainer1">
+          <div class="card rounded-5">
+            <div class="front"> <img src="./Assets/gallery-Images/section f/octopus 5.jpg" alt="Error">
+            </div>
+            <div class="back">
+              <h1 class="h0">Giant Pacific octopus</h1><br>
+              <p class="p0">The giant Pacific octopus is the largest octopus species in the world, with one specimen
+                found at an enormous 600 pounds (270 kg) with a length of more than 30 feet (9 m).
+                This truly massive octopus inhabits the northern Pacific Ocean and resides in a range of different
+                depths. These range from shallow tidal pools to great depths of about 5000 feet (1500 m), but is most
+                commonly found only 15 feet (5 m) from the ocean surface.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="cantainer1">
+          <div class="card rounded-5">
+            <div class="front"> <img src="./Assets/gallery-Images/section f/octopus 6.jpg" alt="Error"></div>
+            <div class="back">
+              <h1 class="h0">East Pacific red</h1><br>
+              <p class="p0">The East Pacific red octopus is super intelligent and have very good short term and long
+                term memories. Through testing, marine biologist have proved that they are able to solve complex
+                problems.
+                The East Pacific red octopus is the most commonly occurring shallow-water octopus on much of the North
+                American West Coast.
+
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="cantainer1">
+          <div class="card rounded-5">
+            <div class="front"> <img src="./Assets/gallery-Images/section f/octopus 7.jpg" alt="Error"></div>
+            <div class="back">
+              <h1 class="h0">Coconut octopus</h1><br>
+              <p class="p0">Commonly known as the coconut octopus because of the way it makes dens out of discarded
+                coconut shells, this intelligent octopus will also carry and use trash or various types of shells for
+                defensive tools.
+                What makes this octopus even more unique is their ability to move on two limbs (bipedal locomotion), a
+                method similar to how humans walk. </p>
+            </div>
+          </div>
+        </div>
+        <div class="cantainer1">
+          <div class="card rounded-5">
+            <div class="front"> <img src="./Assets/gallery-Images/section f/octopus 8.jpg" alt="Error"></div>
+            <div class="back">
+              <h1 class="h0">Caribbean reef octopus</h1><br>
+              <p class="p0">The Caribbean reef octopus is a warm water species and common throughout the waters South
+                Florida, the Caribbean, and Northern South America. They are rarely seen during the day but are
+                frequently seen at night in shallow saltwater reefs.
+                Appearance wise they are up there as on of the most colorful of all octopus species, typically a bright
+                blue-green iridescent with red-brown specks across their bodies.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="g">
+      <div class="mflip">
+        <div class="cantainer1">
+          <div class="card rounded-5">
+            <div class="front"> <img src="./Assets/gallery-Images/section g/jelly fish 1.webp" alt="Error"></div>
+            <div class="back">
+              <h1 class="h0">Mediterranean jellyfish</h1><br>
+              <p class="p0">Looking at this jellyfish from the top, it is pretty obvious where it gets its name from. It
+                has a golden yellow circle on the center of its dome, and the surrounding part has a whitish opaque
+                coloring. It looks like a cracked egg floating in the ocean. They also call it the Mediterranean
+                jellyfish or egg yolk jellyfish.
+                The fried egg jellyfish can grow to be 16 inches wide. </p>
+            </div>
+          </div>
+        </div>
+        <div class="cantainer1">
+          <div class="card rounded-5">
+            <div class="front"> <img src="./Assets/gallery-Images/section g/jelly fish 2.jpg" alt="Error"></div>
+            <div class="back">
+              <h1 class="h0">The crystal jellyfish</h1><br>
+              <p class="p0">The crystal jellyfish is a bioluminescent jellyfish that is almost entirely transparent when
+                it is not glowing. When disturbed, crystal jellies emit a green light from the rim of their bells. This
+                is what makes them so important to science. The crystal jellyfish is the source of the Green Fluorescent
+                Protein that scientists use as cell markers.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="cantainer1">
+          <div class="card rounded-5">
+            <div class="front"> <img src="./Assets/gallery-Images/section g/jelly fish 3.jpg" alt="Error"></div>
+            <div class="back">
+              <h1 class="h0">The lion’s mane jellyfish</h1><br>
+              <p class="p0">The lion’s mane jellyfish, or the arctic red jellyfish, is the largest type of jellyfish.
+                They measure up to 8 feet in diameter and 120 feet in length. The lion’s mane jellyfish has a bell with
+                eight lobes and about 150 tentacles trailing behind it. The color of their bells ranges from light
+                orange to tan to deep orange and crimson red.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="cantainer1">
+          <div class="card rounded-5">
+            <div class="front"> <img src="./Assets/gallery-Images/section g/jelly fish 4.webp" alt="Error"></div>
+            <div class="back">
+              <h1 class="h0">Mangrove box jellyfish</h1><br>
+              <p class="p0">The Mangrove box jellyfish live in coastal mangrove forests, normally between the roots of
+                the trees. You can find them in central America from Florida, Puerto Rico, the Caribbean, the gulf of
+                Mexico, and the Atlantic ocean.
+                This box jellyfish is roughly the size of a grape, 0.5 inches in diameter, and about 1-inch bell length.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="mflip">
+        <div class="cantainer1">
+          <div class="card rounded-5">
+            <div class="front"> <img src="./Assets/gallery-Images/section g/jelly fish 5.jpg" alt="Error">
+            </div>
+            <div class="back">
+              <h1 class="h0">Irukandji jellyfish</h1><br>
+              <p class="p0">The Irukandji jellyfish is very tiny; at its largest, it is no wider than 2.5 cm. Despite
+                its size, it packs a punch with its venom. The venom of the Irukandji jellyfish can cause headaches,
+                vomiting, cardiac arrest, brain bleeds, or even death, amongst many other things. It has four
+                retractable tentacles, each one at the corners of its bell</p>
+            </div>
+          </div>
+        </div>
+        <div class="cantainer1">
+          <div class="card rounded-5">
+            <div class="front"> <img src="./Assets/gallery-Images/section g/jelly fish 6.jpg" alt="Error"></div>
+            <div class="back">
+              <h1 class="h0">The alarm jellyfish</h1><br>
+              <p class="p0">The alarm jellyfish, crown jellyfish, or coronate medusa, this type of jellyfish
+                is a deep sea species that is surely interesting to look at. If you view it from the top, it looks like
+                a floating iris with tentacles; from a side view appears like a crown. It has 20 tentacles, and one of
+                them grows longer than the rest. The bell is just 6 inches wide.
+                The coronate jellyfish live in the midnight zone of the ocean, that's about 13,000 feet deep.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="cantainer1">
+          <div class="card rounded-5">
+            <div class="front"> <img src="./Assets/gallery-Images/section d/turtle 7.webp" alt="Error"></div>
+            <div class="back">
+              <h1 class="h0">Blue bottle jellyfish</h1><br>
+              <p class="p0">This jellyfish species blue bottle jellyfish or Pacific man o war. You'll find them in the
+                warm waters of the northern Atlantic ocean’s Gulf Stream, the Sargasso Sea, the Pacific Ocean, and the
+                Indian ocean. They typically float on the water's surface or just beneath it.
+                Named for its similarity to an 18th-century warship, the Portuguese man o war has a float or air bladder
+                filled with carbon dioxide.</p>
+            </div>
+          </div>
+        </div>
+        <div class="cantainer1">
+          <div class="card rounded-5">
+            <div class="front"> <img src="./Assets/gallery-Images/section g/jelly fish 8.jpg" alt="Error"></div>
+            <div class="back">
+              <h1 class="h0">Purple jellyfish</h1><br>
+              <p class="p0">mauve stingers is purple jellyfish. They have an inky purple bell dotted with brownish-red
+                spots. Not only do mauve stingers have a soft purple glow, but they also release glowing mucus when they
+                are startled. Little wonder their scientific name means ‘night light’ in German.
+                Mauve stingers feed on small fish and crustaceans, and their stingers can even pierce the shell of a
+                crab. </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="h">
+      <div class="mflip">
+        <div class="cantainer1">
+          <div class="card rounded-5">
+            <div class="front"> <img src="./Assets/gallery-Images/section h/ray  fish 1.webp" alt="Error"></div>
+            <div class="back">
+              <h1 class="h0">Electric Rays</h1><br>
+              <p class="p0">While stingrays sting, manta rays are too large to have enemies, and skates use barbs to
+                defend themselves, the electric rays instead use electric shocks to stun their prey. The shocks come
+                from special electric organs located on both sides of their heads.
+                They are also very powerful, able to generate up to 200 volts and 30 amperes of electricity with each
+                zap. </p>
+            </div>
+          </div>
+        </div>
+        <div class="cantainer1">
+          <div class="card rounded-5">
+            <div class="front"> <img src="./Assets/gallery-Images/section h/ray fish 2.webp" alt="Error"></div>
+            <div class="back">
+              <h1 class="h0">Manta Rays</h1><br>
+              <p class="p0">Also called devil rays because of the two horn-like flaps in their mouths, manta rays are
+                very large in size. In fact, some can get up to nearly 30 feet in length and can weigh up to two tons.
+                Despite their size, however, manta rays are not dangerous and never hurt either people or animals.
+                They are quite curious, however, and often like to swim around the divers in the ocean. </p>
+            </div>
+          </div>
+        </div>
+        <div class="cantainer1">
+          <div class="card rounded-5">
+            <div class="front"> <img src="./Assets/gallery-Images/section h/ray fish 3.webp" alt="Error"></div>
+            <div class="back">
+              <h1 class="h0">Round Rays</h1><br>
+              <p class="p0">Consisting of a slender tail and a pectoral disc that is very round in shape, the round rays
+                make up the Urotrygonidae stingray family. They are also without dorsal fins. Round rays like warm water
+                and they are very abundant among other stingrays of the same size.
+                They are mostly found in warm waters in places such as the Caribbean Sea and the coastlines of both
+                North and South America.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="cantainer1">
+          <div class="card rounded-5">
+            <div class="front"> <img src="./Assets/gallery-Images/section h/ray fish 4.webp" alt="Error"></div>
+            <div class="back">
+              <h1 class="h0">Skate Rays</h1><br>
+              <p class="p0">Skates are very similar to stingrays but have a few differences. For one thing, skates have
+                no stings but instead, they have sharp barbs found alongside their spines and sometimes on their tails,
+                which they use for defense. Their tails are also wider than those on stingrays, and they have small fins
+                near the tip of their tails.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="mflip">
+        <div class="cantainer1">
+          <div class="card rounded-5">
+            <div class="front"> <img src="./Assets/gallery-Images/section h/ray fish 5.webp" alt="Error">
+            </div>
+            <div class="back">
+              <h1 class="h0">Sting Rays</h1><br>
+              <p class="p0"> Stingrays have long, thin tales that contain barbed nodes that sting. Not all of the
+                stingrays have this feature, but most do. The toxin the tails spew out is very painful when ejected,
+                although stingrays tend not to sting people or animals unless they feel threatened.
+                Standard stingrays are easily identifiable and very common, and they have diamond shapes.</p>
+            </div>
+          </div>
+        </div>
+        <div class="cantainer1">
+          <div class="card rounded-5">
+            <div class="front"> <img src="./Assets/gallery-Images/section h/ray fish 6.webp" alt="Error"></div>
+            <div class="back">
+              <h1 class="h0">Whiptale Stingrays</h1><br>
+              <p class="p0">Not surprisingly, these stingrays have tails shaped like whips, and at the tips are barbs,
+                which are poisonous. Most whiptails are found in saltwater environments, but many have been known to
+                inhabit freshwater areas as well, including Southeast Asia. This species includes blue, rough-tail,
+                pelagic, sharp-nose, mask, and porcupine stingrays.</p>
+            </div>
+          </div>
+        </div>
+        <div class="cantainer1">
+          <div class="card rounded-5">
+            <div class="front"> <img src="./Assets/gallery-Images/section h/ray fish 7.webp" alt="Error"></div>
+            <div class="back">
+              <h1 class="h0">Stingrays</h1><br>
+              <p class="p0">Stingrays usually have flat bodies and a long, thin tail, which is where the stingers are if
+                they are this type of ray. When they do produce venom, it is very powerful and can do great damage.
+                Most of the time, stingrays do not sting or harm people unless they feel threatened, as they usually
+                only attack when they feel their lives are in danger. You can become very ill or even die if you are
+                stung by a stingray, depending on the specific situation.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="cantainer1">
+          <div class="card rounded-5">
+            <div class="front"> <img src="./Assets/gallery-Images/section h/ray fish 8.webp" alt="Error"></div>
+            <div class="back">
+              <h1 class="h0">Eagel Rays</h1><br>
+              <p class="p0">Although most stingrays swim close to the bottom of the ocean, eagle rays are active
+                swimmers in the open ocean, and, in fact, they are known to leap in and out of the water while they
+                swim. They prefer tropical temperatures and therefore are often found in the Caribbean Sea and the
+                Indian Ocean.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+  </main>
+  <footer class="mt-5">
+    <div class="footer pt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-sm-4 col-xs-12">
+            <div class="single_footer">
+              <h4 class="font-mont">Services</h4>
+              <ul class="font-lato">
+                <li><a href="#" class="text-decoration-none fw-semibold">Events</a></li>
+                <li><a href="#" class="text-decoration-none fw-semibold">Explore</a></li>
+                <li><a href="#" class="text-decoration-none fw-semibold">Contact
+                    US</a></li>
+                <li><a href="#" class="text-decoration-none fw-semibold">FAQs</a></li>
+                <li><a href="#" class="text-decoration-none fw-semibold">Visit
+                    US</a></li>
+              </ul>
+            </div>
+          </div><!--- END COL -->
+          <div class="col-md-4 col-sm-4 col-xs-12">
+            <div class="single_footer single_footer_address">
+              <h4 class="font-mont fw-semibold">Page Link</h4>
+              <ul class="font-lato">
+                <li><a href="#" class="text-decoration-none fw-semibold">Membership</a></li>
+                <li><a href="#" class="text-decoration-none fw-semibold">Create
+                    Account</a></li>
+                <li><a href="#" class="text-decoration-none fw-semibold">Log
+                    In</a></li>
+                <li><a href="#" class="text-decoration-none fw-semibold">Buy
+                    Tickets</a></li>
+              </ul>
+            </div>
+          </div><!--- END COL -->
+          <div class="col-md-4 col-sm-4 col-xs-12">
+            <div class="single_footer single_footer_address">
+              <h4 class="font-mont">Subscribe today</h4>
+              <div class="signup_form">
+                <form action="#" class="subscribe">
+                  <input type="text" class="subscribe__input" placeholder="Enter Email Address">
+                  <button type="button" class="subscribe__btn"><i class="fas
+                        fa-paper-plane"></i></button>
+                </form>
+              </div>
+            </div>
+            <div class="social_profile">
+              <ul>
+                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+              </ul>
+            </div>
+          </div><!--- END COL -->
+        </div><!--- END ROW -->
+        <div class="row">
+          <div class="col-lg-12 col-sm-12 col-xs-12">
+            <p class="copyright">Copyright © 2023 <a href="#" class="text-decoration-none">Nexus Aquarium</a>.</p>
+          </div><!--- END COL -->
+        </div><!--- END ROW -->
+      </div><!--- END CONTAINER -->
+    </div>
+
+  </footer>
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+    </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
